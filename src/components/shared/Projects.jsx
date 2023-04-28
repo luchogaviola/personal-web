@@ -1,8 +1,10 @@
 import React from 'react'
+import { forwardRef } from 'react';
 
-function Projects() {
+const Projects = forwardRef((props, ref) => {
+    
   return (
-    <section className='bg-[#f9f9f9] py-40 px-0'>
+    <section ref={ref} className='bg-[#f9f9f9] py-40 px-0'>
         <div className='my-0 mx-auto max-w-[70rem] py-0 px-16'>
             <div className='flex-column'>
                 <p className='text-[#147efb] font-bold mb-2 uppercase'>Portafolio</p>
@@ -11,7 +13,7 @@ function Projects() {
                 <div className='flex-row flex gap-24 p-6 h-35 bg-[#fff] rounded-[1.2rem] shadow-3xl'>
                     <div className='rounded-[1.2rem] h-auto overflow-hidden w-[32rem]'>
                         <a href="">
-                            <img className='h-auto w-full hover:transform hover:translate-y-[-83%] transition duration-[10s] ease-linear' src="./public/detako.png" alt="detako" />
+                            <img className='h-auto w-full hover:transform hover:translate-y-[-83%] transition duration-[10s] ease-linear' src="/detako.png" alt="detako" />
                         </a>
                     </div>
                     <div className='flex flex-col h-auto justify-center text-center	w-[19rem] text-[1.1rem]'>
@@ -24,11 +26,11 @@ function Projects() {
                         <div className='gap-4 justify-evenly mt-7 flex'>
                             <a className='flex items-center	 font-semibold gap-[5px] ' href="">
                                 Code
-                                <img className='w-8' src="./public/github.png" alt="github-icon" />
+                                <img className='w-8' src="/github.png" alt="github-icon" />
                             </a>
                             <a className='flex items-center font-semibold gap-[5px]' href="">
                                 Live Demo
-                                <img className='w-6' src="./public/compartir.png" alt="compartir-img" />
+                                <img className='w-6' src="/compartir.png" alt="compartir-img" />
                             </a>
                         </div>
                     </div>
@@ -38,7 +40,7 @@ function Projects() {
             </div>
         </div>
     </section>
-  )
-}
+  );
+});
 
 export default Projects

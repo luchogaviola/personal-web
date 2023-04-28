@@ -1,15 +1,17 @@
 import React from 'react'
+import { forwardRef } from 'react'
 
-function About() {
+const About = forwardRef((props, ref) => {
+    
   return (
-    <section className='bg-[#fff] py-40 px-0'>
+    <section ref={ref} className='bg-[#fff] py-40 px-0'>
         <div className='my-0 mx-auto max-w-[70rem] py-0 px-16'>
             <div className='items-center grid grid-cols-2 justify-center'>
                 <div className='relative'>
-                    <img className='bottom-[35px] right-[98px] w-[3.75rem!important] z-10 absolute' src="./public/yo.png" alt="emoji" />
-                    <img className='w-[26rem] h-[22rem] rounded-[1.2rem]' src="./public/work.png" alt="notebook" />
+                    <img className='bottom-[35px] right-[98px] w-[3.75rem!important] z-10 absolute' src="/yo.png" alt="emoji" />
+                    <img className='w-[26rem] h-[22rem] rounded-[1.2rem]' src="/work.png" alt="notebook" />
                     <span className='bg-[#fff] rounded-full bottom-[-35px] right-[33px] w-[12rem] h-[12rem] absolute '>
-                        <img className='animate-spin-slow' src="./public/vuelta.svg" alt="text" />
+                        <img className='animate-spin-slow' src="/vuelta.svg" alt="text" />
                     </span>
                 </div>
                 <div className='pr-6'>
@@ -26,7 +28,7 @@ function About() {
             </div>
         </div>
     </section>
-  )
-}
+  );
+});
 
 export default About

@@ -29,12 +29,7 @@ export default {
         '18': '4.5rem',
       },
       backgroundImage: {
-        'perfil': "url('./public/perfil.jpg')",
-        'linkedin': "url('./public/linkedinhover.png')",
-        'github': "url('./public/githubhover.png')",
-      },
-      Image: {
-        'github': "url('./public/githubhover.png')",
+        'perfil': "url('/perfil.jpg')",
       },
       zIndex: {
         '200': '200',

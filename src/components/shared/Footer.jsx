@@ -10,10 +10,10 @@ function Footer() {
                 </h3>
                 <div className='flex gap-3'>
                     <a href="https://www.linkedin.com/in/luchogaviola/">
-                        <img className='w-[1.8rem]' src="./public/linkedin-footer.png" alt="linkedin" />
+                        <img className='w-[1.8rem]' src="/linkedin-footer.png" alt="linkedin" />
                     </a>
                     <a href="https://github.com/luchogaviola">
-                        <img className='w-[1.8rem]' src="./public/github-footer.png" alt="github" />
+                        <img className='w-[1.8rem]' src="/github-footer.png" alt="github" />
                     </a>
                 </div>
             </div>
